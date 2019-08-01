@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Russo One', sans-serif;
+}
+
+body {
+    text-align: center;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    padding-top: 45px;
+}
+
+#header img {
+    width: 250px;
+}
+
+input#input {
+    margin: 50px 0;
+    width: 500px;
+    height: 50px;
+    padding-left: 15px;
+    text-transform: uppercase;
+}
+
+#search-button {
+    height: 54px;
+    width: 134px;
+    background-color: #323b97;
+    color: #fff;
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #ed143d;
+}
+
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.movie-card {
+    width: calc(25% - 35px);
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.movie-card img {
+    width: 100%;
+}
+
+.movie-title {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.movie-delete {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+}
+
+.movie-card:hover .movie-delete {
+    display: block;
+    background-color: #ed143d;
+}
